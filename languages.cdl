@@ -1,0 +1,20 @@
+netcdf languages {
+
+dimensions:
+    n_lang = 5 ;
+
+variables:
+    string languages(n_lang) ;
+  string phrase(n_lang) ;
+
+data:
+
+  languages = "English", "Ogham", "Welsh", "Anglo-Saxon", "Braille" ;
+
+  phrase = 
+    "Hello World!",
+    "/ ᚛᚛ᚉᚑᚅᚔᚉᚉᚔᚋ ᚔᚈᚔ ᚍᚂᚐᚅᚑ ᚅᚔᚋᚌᚓᚅᚐ᚜",
+    "Dw i'n gallu bwyta gwydr, 'dyw e ddim yn gwneud dolur i mi.",
+    "/ ᛁᚳ᛫ᛗᚨᚷ᛫ᚷᛚᚨᛋ᛫ᛖᚩᛏᚪᚾ᛫ᚩᚾᛞ᛫ᚻᛁᛏ᛫ᚾᛖ᛫ᚻᛖᚪᚱᛗᛁᚪᚧ᛫ᛗᛖ᛬",
+    "/ ⠊⠀⠉⠁⠝⠀⠑⠁⠞⠀⠛⠇⠁⠎⠎⠀⠁⠝⠙⠀⠊⠞⠀⠙⠕⠑⠎⠝⠞⠀⠓⠥⠗⠞⠀⠍⠑" ;
+}

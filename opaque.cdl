@@ -1,0 +1,16 @@
+netcdf opaque_data {
+
+types:
+  opaque(11) raw_data_t ;
+
+dimensions:
+    time = 4 ;
+
+variables:
+    raw_data_t raw_obs(time) ;
+
+data:
+
+ raw_obs = 0X0102030405060708090A0B, 0XAABBCCDDEEFFEEDDCCBBAA, 
+    0XFFFFFFFFFFFFFFFFFFFFFF, 0XCF0DEFACED0CAFE0FACADE ;
+}

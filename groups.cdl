@@ -1,0 +1,31 @@
+netcdf groups {
+
+dimensions:
+    dim = 4 ;
+variables:
+    float var(dim) ;
+
+data:
+  var = 1, 2, 3, 4 ;
+
+group: grp1 {
+  dimensions:
+    dim = 2 ;
+  variables:
+    float var(dim) ;
+
+  data:
+    var = -1, -2 ;
+  } // group grp1
+
+group: grp2 {
+  dimensions:
+    dim = 2 ;
+  variables:
+    float var(/grp1/dim, /dim) ;
+
+  data:
+     var = 5, 6, 7, 8,
+           -1, -2, -3, -4 ;
+  } // group grp2
+}

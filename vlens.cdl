@@ -1,0 +1,15 @@
+netcdf vlens {
+types:
+  int(*) collection_of_ints ;
+
+dimensions:
+    m = 4 ;
+
+variables:
+    collection_of_ints ragged_array(m) ;
+
+data:
+
+ ragged_array = {10, 11, 12, 13, 14}, {20, 21, 22, 23}, {30, 31, 32}, 
+    {40, 41} ;
+}
